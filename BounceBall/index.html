@@ -1,0 +1,108 @@
+<!--
+Author: Don Bowers,jdkitson, Modified by Mohammad Rahman
+Creation Date: April 20, 2020
+Purpose: Demonstrate the use of jQuery Animate functions and effects. Also demonstrate adding event listeners to html elements.
+Requires: /img, /css, /js - including jquery > 3.3.1 , clouds.js
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>X-Country Basketball</title>
+    <link rel="stylesheet" href="css/basketball.css"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/clouds.js"></script>
+    <script>
+        // this waits until the dom is ready
+        $(document).ready(function () {
+
+            // Initialize variables
+
+            let $theBall;
+            let $theSun;
+            let $theStone;
+
+
+            // run cloud display function (you don't need to touch anything with the clouds)
+            moveClouds();
+
+
+            let message = "Complete!";
+            let $theMessage = $(".message");
+            $theBall = $(".ball");
+            $theStone = $(".stone");
+            $theSun = $(".sun");
+
+
+            // Resetting the program  when clicked on the sun
+            $theSun.on("click",function () {
+                window.location.reload();
+            });
+
+            // Stone gets disappear when mouse over on stone
+            $theStone.on("mouseover", function () {
+                //Fade out stone
+                $theStone.hide();
+
+                ballFall();
+            });
+
+            /* Called when stone is disappeared. This function is for making all the bounces of the ball */
+            function ballFall() {
+
+                //Move ball to the right
+                $theBall.animate({right:'+=10%'},"fast");
+
+                //Move down
+                $theBall.animate({top:'30%'},2500);
+
+                //Back up and down
+                $theBall.animate({top:'15%'},"slow");
+                $theBall.animate({top:'30%'},2500);
+
+                //Back up and down
+                $theBall.animate({top:'15%'},"slow");
+                $theBall.animate({top:'30%'},2500);
+
+                //Move ball to the right
+                $theBall.animate({right:'+=15%'},"fast");
+
+                //Back up
+                $theBall.animate({top:'80%'},2500);
+
+                //Back up and down
+                $theBall.animate({top:'40%'},"slow");
+                $theBall.animate({top:'80%'},2500);
+
+                //Back up and down
+                $theBall.animate({top:'55%'},"slow");
+                $theBall.animate({top:'80%'},2500);
+
+                //Back up and down
+                $theBall.animate({top:'70%'},"slow");
+                $theBall.animate({top:'80%'},2500);
+
+                //Move ball to the center
+                $theBall.animate({right:'+=20%',
+                top: "80%",
+                    message
+                },"fast");
+                //To show the message
+                $theMessage.show();
+            }
+
+        });  // end doc ready
+    </script>
+</head>
+<!-- you shouldn't need to change anything in the HTML -->
+<body class="bodyBackGrass">
+<div class="sun" title="Click me to restart."></div>
+<div class="cloud"></div>
+<div class="cloud2"></div>
+<div class="ledgeCommon ledge"></div>
+<div class="ledgeCommon ledge2"></div>
+<div class="stone"></div>
+<div class="message"></div>
+<div class="ball"></div>
+</body>
+</html>
