@@ -1,0 +1,24 @@
+/*
+Name: Mohammad Rahman
+Date: 07 March 2020
+Purpose: To design html pages and override main bootstrap file and properly link with modified files.
+*/
+
+#container{
+    border:1px solid grey;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: white;
+    color:black;
+    font-family: sans-serif, Arial;
+}
+
+.ins1{
+    font-weight: bold;
+    color:blueviolet;
+}
+h3{
+    font-weight: bold;
+}
+
+

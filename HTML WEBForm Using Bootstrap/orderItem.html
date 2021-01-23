@@ -1,0 +1,127 @@
+<!--
+Name: Mohammad  Rahman
+Date: 07 March 2020
+Purpose: To add processOrder.js file and custom.css file in it and run in browser
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" href="custom.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Computer Selling Form</title>
+</head>
+<body>
+<div id="container">
+    <h1>Computer Selling Form</h1>
+    <form>
+        <!--Here are four text fields -->
+        <p>**** Please Fill up this form in <span class="ins1">Block Letter</span> ****</p>
+        <div class="textField">
+            <div class="form-group">
+                <h4><label>First Name</label><br></h4>
+                <input type="text" id="firstName" placeholder="Please enter first name (ie., Mark)"
+                       class="form-control"><br>
+                <span id="fNameError"></span>
+            </div>
+            <div class="form-group">
+                <h4><label>Last Name</label><br></h4>
+                <input type="text" id="lastName" placeholder="Please enter last name (ie., Mcdonald)"
+                       class="form-control"><br>
+                <span id="lNameError"></span>
+            </div>
+            <div>
+                <h4><label>E-mail</label><br></h4>
+                <input type="email" id="emailAdd" placeholder="example@yahoo.com" value=" " class="form-control">
+                <span id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <h4><label>Phone No.</label><br></h4>
+                <input type="tel" id="telNum" placeholder="Please enter number(ie., 9029162446)"
+                       class="form-control"><br>
+                <span id="telNumError"></span>
+            </div>
+
+        </div>
+        <!-- Here is group1 of radio buttons to choose computer type -->
+        <div id="radioButtonGroup1">
+            <h3>Computer Type</h3>
+            <span placeholder="What type of desktop you want"></span>
+            <input type="radio" name="computer" value="desktop"/> Desktop <br/>
+            <input type="radio" name="computer" value="laptop"/> Laptop <br/>
+            <input type="radio" name="computer" value="other"/> Other <br/>
+        </div>
+
+        <!-- Here is one group of five check boxes to pick brands -->
+        <div id="brandName">
+            <h3>Brand Name</h3>
+            <input type="checkbox" name="brand" value="apple"/> Apple<br/>
+            <input type="checkbox" name="brand" value="hp"/> Hewlett-Packed<br/>
+            <input type="checkbox" name="brand" value="acer"/> Acer<br/>
+            <input type="checkbox" name="brand" value="lenovo"/> Lenovo<br/>
+            <input type="checkbox" name="brand" value="asus"/> Asus<br/>
+            <input type="checkbox" name="brand" value="dell"/> Dell<br/>
+        </div>
+        <!-- And here is another group2 of radio buttons to choose type of payment -->
+        <div id="radioButtonGroup2">
+            <h3>Payment Type</h3>
+            <input type="radio" name="payment" value="visa"/> VISA Card<br/>
+            <input type="radio" name="payment" value="masterCard"/> Master Card<br/>
+            <input type="radio" name="payment" value="Amex"/> American Express <br/>
+            <input type="radio" name="payment" value="cash"/> Cash on Delivery <br/>
+        </div>
+        <!-- Here is a drop-down menu1 for showing all provinces in Canada -->
+        <div id="dropDownMenu1">
+            <p>
+                <label>State</label>
+                <select>
+                    <option>Alberta</option>
+                    <option>British Columbia</option>
+                    <option>Manitoba</option>
+                    <option>New Brunswick</option>
+                    <option>Newfoundland and Labrador</option>
+                    <option>Nova Scotia</option>
+                    <option>Ontario</option>
+                    <option>Prince Edward Island</option>
+                    <option>United States</option>
+                    <option>Saskatchewan</option>
+                </select>
+                <!-- Here is a drop-down menu2 for giving option of countries -->
+                <label id="dropDownMenu2">Country</label>
+                <select>
+                    <option>Canada</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>Italy</option>
+                    <option>Japan</option>
+                    <option>Russia</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                </select>
+            </p>
+        </div>
+        <!-- Text area field is to make any comment by customer -->
+        <div id="textArea">
+            <p>Please write your comment below</p>
+            <textarea name="message" rows="5" cols="80"> </textarea>
+        </div>
+        <!-- Here is a display button to display all information in output box and reset button to clear all information from dialog box-->
+
+        <button type="button" id="displayButton">Display Data</button>
+        <input type="reset" value="Reset Form" name="reset">
+
+    </form>
+    <div id="outputDiv"></div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="processOrder.js"></script>
+</body>
+</html>
