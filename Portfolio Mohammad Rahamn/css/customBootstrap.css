@@ -1,0 +1,216 @@
+/*
+Name: Mohammad Mahmudur Rahman
+Date: 06 December 2018
+Purpose: To design 5 html pages and override main bootstrap file and properly link with all modified files.
+*/
+
+/* To change body color*/
+body {
+    background: black;
+    color: white;
+}
+a{
+font-style: italic;
+font-variant-ligatures: normal;
+font-variant-caps: normal;
+font-variant-numeric: normal;
+font-variant-east-asian: normal;
+font-weight: bold;
+font-stretch: expanded;
+font-size: 20px;
+line-height: 1.4em;
+font-family: "playfair display", serif;
+}
+/*custom bootStrap for index.html Page*/
+.navbar-brand{
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    color: #b92c28;
+    font-size: x-large;
+}
+.profilePic{
+    width:250px;
+    height: 300px;
+    border-radius: 70px;
+}
+.col9Intro{
+
+    left: 23px;
+    position: relative;
+    top: -315px;
+}
+.indexAdd{
+    text-align: right;
+    right: 220px;
+    position: relative;
+    top: 6px
+}
+.indexP1{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-stretch: expanded;
+    font-size: 20px;
+    color: #9acfea;
+}
+
+.col2Name{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-stretch: normal;
+    font-size: 35px;
+    line-height: 1.4em;
+    font-family: "playfair display", serif;
+    color: white;
+}
+#col2P{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 05px;
+    padding-top:05px;
+    font-family: "playfair display", serif;
+    font-stretch: normal;
+}
+.emailN{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top:10px;
+    font-family: "playfair display", serif;
+    font-stretch: normal;
+}
+
+
+/*Code has been edited from web  */
+.social-icons{
+    padding-left: 15px;
+}
+.social-icons a {
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+}
+.social-icons a:last-child {
+    margin-left: 0;
+}
+.social-icons a:hover {
+    background-color: #BD5D38;
+}
+
+
+/*custom bootStrap for Education & Experience */
+.educationP{
+    width: 100%;
+    height: 735px;
+}
+.educationDoc {
+    text-align: left;
+    right: -11px;
+    position: relative;
+    top: -733px;
+    color: #b92c28;
+    font-weight: bold;
+}
+.experienceP{
+    width: 100%;
+    height: 735px;
+}
+.experienceDoc {
+    text-align: left;
+    right: -11px;
+    position: relative;
+    top: -735px;
+    color: #b92c28;
+    font-weight: bold;
+}
+
+
+/*custom bootStrap for Skills & Language*/
+
+.tsSpan{
+    font-weight: bold;
+    color: #d58512;
+}
+.skillCareer{
+    width: 100%;
+    height: 60%;
+}
+/* Html table customized with bootstrap css*/
+table{
+    margin: 10px;
+    float: bottom;
+    width: 90%;
+    border: 1px solid grey;
+    margin-left: 7px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    padding: 18px;
+    border-spacing: 0;
+    border-collapse: separate;
+}
+thead, tbody{
+    background-color: green;
+}
+table th{
+    color: aqua;
+    padding: 10px;
+}
+table tbody td {
+    padding: 10px 2px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    color: white;
+}
+table tbody tr:first-child td {
+    border-top: 1px solid white;
+}
+
+
+/*custom bootStrap for Education & Experience */
+.awardsP{
+    width: 100%;
+    height:500px;
+}
+.awardsDoc {
+    text-align: left;
+    right: -8px;
+    position: relative;
+    top: -465px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+/*custom bootStrap for Contact page*/
+.contactAdd{
+    text-align: center;
+}
+
+
+/*To change jumbotron's background color and font*/
+.container{
+    background-color: #b92c28;
+    font-weight: bolder;
+}
+/* To change font color and family*/
+.hoovers-col-sm-12col-sm-12{
+    color: #b92c28;
+    font-family: Verdana;
+}
+/* To change font  color and background*/
+.warranty-col-sm-12{
+    color: #d58512;
+    background-color: #2aabd2;
+    font-family: "Bernard MT Condensed";
+}
