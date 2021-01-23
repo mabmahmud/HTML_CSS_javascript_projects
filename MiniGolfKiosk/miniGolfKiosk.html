@@ -1,0 +1,74 @@
+<!-- 
+Name: Don Bowers
+Date: 2020-04-08
+Purpose: Demonstrate the use of forms and functions to create a mini golf business interface.
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Working with Forms</title>
+		<link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="./custom.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src = "./miniGolfKiosk.js"></script>
+		<noscript>
+			"You don't have Javascript turned on! In order for this page to function properly you must turn on Javascript."
+		</noscript>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Jillian's Putt Putt Par-Tee</h1>
+			<h5>Point of Sale System</h5>
+			<div id="leftArea">
+				<form>
+					<fieldset>
+						<legend>Players</legend>
+						<a href="#" title="(13 and older)">Adults</a>
+						<select id="adults" onchange="updateTotals()">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>  $4 each<br><br>
+						<a href="#" title="(12 and under)">Children</a>
+						<select id="children" onchange="updateTotals()">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select> $2 each<br><br>
+					</fieldset>
+					<fieldset>
+						<legend>Discounts</legend>
+						<input type="radio" id="caa" name="discountGroup" value="CAA" onchange="updateTotals()"/> CAA (10%)<br>
+						<input type="radio" id="mil" name="discountGroup" value="Military" onchange="updateTotals()"/> Military (25%)<br>
+						<input type="radio" id="fun" name="discountGroup" value="Fun Club Member" onchange="updateTotals()"/> FunClub Member (50%)<br>
+					</fieldset>
+				</form>
+
+				<button id = "resetButton" onclick="resetForm()" type="button">Reset Form</button>
+			</div>
+
+				<div id="totalArea">
+					<fieldset>
+						<legend>Totals</legend>
+						Number of Adults: <input type="text" id="numAdults" readonly="readonly" />    <span id="totalAdultsDiv"></span><br>
+						Number of Children: <input type="text" id="numChildren" readonly="readonly"/> <span id="totalChildrenDiv"></span><br><br>
+						Net Amount: <span id="totalBeforeTaxDiv"></span><br><br>
+						Gross Amount (including 10% tax): <span id="totalAfterTaxDiv"></span><br>
+						<button type="button" id="changeButton" onclick="calculateChange()">$CHANGE?</button>
+						<div id="changeOutput">
+							You owe the customer: <span id="changeDue">.</span>
+						</div>
+						<hr>
+						Discounts Applied:<br>
+						<span id="discountString"></span>
+						</fieldset>
+				</div>
+			</div>
+	</body>
+</html>

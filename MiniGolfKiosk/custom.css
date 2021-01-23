@@ -1,0 +1,73 @@
+/*/
+Name: Don Bowers and Modified by Mohammad Rahman
+Date: 2020-04-08
+Purpose: Using Css to modify forms and functions to create a mini golf business interface attractive.
+*/
+#container {
+    width: 800px;
+    margin: auto;
+}
+form, input, select  {
+    font-size: 120%;
+}
+#leftArea fieldset {
+    width:250px;
+    background-color: lavenderblush;
+    margin-bottom: 10px;
+}
+legend {
+    background-color: lightblue;
+}
+#totalArea {
+    float: left;
+    font-size: 130%;
+    width: 500px;
+}
+#totalArea input {
+    width:25px;
+    font-size: 90%;
+}
+#totalArea fieldset{
+    background-color:lightcoral;
+}
+#totalArea legend{
+    background-color:lawngreen;
+}
+
+  #leftArea {
+    float:left;
+}
+#leftArea a {
+    text-decoration: none;
+    color: black;
+    cursor: help;
+}
+h1{
+    font-family: "Arial Rounded MT Bold";
+    text-align: center;
+    font-size:60px ;
+    color: blue;
+}
+h5 {
+    font-size: 100%;
+    margin-top:20px;
+}
+#totalAfterTaxDiv {
+    font-weight: bolder;
+}
+#changeButton {
+    font-size: 90%;
+    background-color:lightgreen;
+}
+#changeOutput {
+    display:none;
+    padding: 10px;
+    background-color: #74ff9b;
+    border: 1px solid black;
+}
+#resetButton{
+    background-color:lightblue;
+    font-size: x-large;
+
+}
+#discountString {font-size: 90%;}
