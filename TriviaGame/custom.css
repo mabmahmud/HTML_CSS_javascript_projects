@@ -1,0 +1,63 @@
+/*
+Name: Mohammad Rahman
+Date: 16 March 2020
+Purpose: To design html pages and override main bootstrap file and properly link with modified files.
+*/
+
+/* To design the page  */
+#container{
+    border:1px solid green;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: white;
+    color:black;
+    font-family: sans-serif, Arial;
+    position: center;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+}
+/* To design the game name  */
+h1{
+    font-weight: bold;
+    color: darkred;
+    margin: 0 auto;
+    font-size: 70px;
+   text-align: center;
+}
+/* To design  all h4 heading  */
+h4{
+    font-weight: bold;
+}
+/* To design error massage dialogue box  */
+.errorStyle {
+    background-color:red;
+    padding:1px;
+    border:1px solid;
+    color:white;
+    /* this hides it by default - only show if there is an error */
+    display:none;border-radius: 3px;
+}
+/* To design total score percentage */
+.red{
+    font-family: Verdana;
+    font-size: 350%;
+    font-weight: bold;
+    color: red;
+    font-style: italic;
+}
+.orange{
+    color: orange;
+    font-size: 350%;
+    font-weight: bold;
+    font-family: Arial;
+    font-style: italic;
+}
+.green {
+    color: green;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 350%;
+    font-style: italic;
+}

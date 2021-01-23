@@ -1,0 +1,106 @@
+<!--
+Name: Mohammad Rahman
+Date: 16 March 2020
+Purpose: To add trivProcess.js file and custom.css file in it and run in browser
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+</head>
+    <body>
+        <div id="container">
+            <h1>Trivia Game</h1>
+            <form id="myForm">
+
+                <!--Here are two text fields -->
+                <p>**** Please choose <span class="ins1">Correct Option</span> to play this game****</p>
+                <div class="textField">
+                    <div class="form-group">
+                    <h4><label>01. How many states are there in United State?</label><br></h4>
+                        <input type="text" id="textBox1" placeholder="Please enter Number (ie. 1,2,3)" class="form-control"><br>
+
+                        <span id="textBox1Error"></span>
+                    </div>
+                    <div class="form-group">
+                    <h4><label>02. Which of the planets is closest to the sun?</label></h4><br>
+                        <input type="text" id="textBox2" placeholder="Please enter planet (ie., Mars)" class="form-control"><br>
+                        <span id="textBox2Error"></span>
+                    </div>
+                </div>
+
+                <!-- Here is group1 of radio buttons to choose painter name  -->
+                <div  class="form-group" id="radioButton1" >
+                    <h4>03. Who painted the Mona Lisa?</h4>
+                    <input type="radio" name="paint" value="mich"/> Michelangelo <br/>
+                    <input type="radio" name="paint" value="aris"/> Aristotle <br/>
+                    <input type="radio" name="paint" value="pica"/> Picasso <br/>
+                    <input type="radio" id ="noneOfAbove" name="paint" value="none"/> None of the above <br/>
+                    <div id="radioError1"></div>
+                </div>
+
+                <!-- Here is one group of four check boxes to choose -->
+                <div class="form-group" >
+                    <h4>04. What are the biggest harms of Noise Pollution to human being?</h4>
+                    <input type="checkbox" name="check" value="hyper" id="hyper"/> Hypertension<br/>
+                    <input type="checkbox" name="check" value="stress" id="stress"/> High stress levels-<br/>
+                    <input type="checkbox" name="check" value="hearing" id="hearing"/> Hearing loss<br/>
+                    <input type="checkbox" name="check" value="all" id ="allOfAbove"/> All of the above <br/>
+                    <span id="checkError1"></span>
+                </div>
+
+                <!-- And here is another group2 of radio buttons to choose year -->
+                <div class="form-group">
+                    <h4>05. When did the First World War start?</h4>
+                    <input type="radio" name="war" value="year1"/> 1945<br/>
+                    <input type="radio" name="war" value="year2" id="1914"/> 1914<br/>
+                    <input type="radio" name="war" value="year3"/> 1947<br/>
+                    <input type="radio" name="war" value="year4"/> 1965<br/>
+                    <div id="radioError2"></div>
+                </div>
+
+                <!-- Here is a drop-down menu1 for showing options for temperatures -->
+                <div class="form-group">
+                   <h4><label>06. What temperature does water boil at?</label></h4><br/>
+                    <select class="form-control" id="dropDown1">
+                        <option value="">Please select an option</option>
+                        <option value="temp50">50C</option>
+                        <option value="temp100" id="hundredDegree">100C</option>
+                        <option value="temp120">120C</option>
+                        <option value="temp90">90C</option>
+                    </select>
+                    <div id="dropDown1Error"></div>
+                </div>
+
+                <!-- Here is a drop-down menu2 for giving option of inventor -->
+                <div class="form-group">
+                    <h4><label>07. Who invented the telephone?</label></h4><br/>
+                    <select class="form-control" id="dropDown2" name="dropDown2">
+                        <option value="">Please select an option</option>
+                        <option value="alex">Alexander</option>
+                        <option value="and" >Andrew</option>
+                        <option value="bell" id="bell">Bell</option>
+                        <option value="new">Newton</option>
+                    </select>
+                    <div id="dropDown2Error"></div>
+                </div>
+
+                <!-- Here is a display button to display all information in output box -->
+                <div class="form-group">
+                    <button type="button" class="btn btn-success btn-lg" id="myButton">Total Score</button>
+                </div>
+            </form>
+            <div id="outputDiv"></div>
+        </div>
+        <script src="trivProcess.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
