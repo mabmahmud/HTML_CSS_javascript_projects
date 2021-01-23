@@ -1,0 +1,32 @@
+/*
+Name: Mohammad Mahmudur Rahman
+Date: 11 October 2018
+Purpose: To override main bootstrap file and properly track all modified file.
+*/
+/* To change body color*/
+body {
+    background: lightslategray;
+    color: #f7f7f7;
+    font-family: 'Montserrat', sans-serif;
+}
+/*To change the color of navigation bar brand name  */
+.navbar-brand{
+    color: #ec971f;
+}
+
+/*To change jumbotron's background color and font*/
+.container{
+    background-color: #b92c28;
+    font-weight: bolder;
+}
+/* To change font color and family*/
+.hoovers-col-sm-12col-sm-12{
+    color: #b92c28;
+    font-family: Verdana;
+}
+/* To change font  color and background*/
+.warranty-col-sm-12{
+    color: #d58512;
+    background-color: #2aabd2;
+    font-family: "Bernard MT Condensed";
+}
